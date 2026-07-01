@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Newsletter Parfums d’Olive</title>
+  <meta name="description" content="Inscription à la newsletter de Parfums d’Olive à Nouméa." />
+  <style>
+    :root {
+      --olive: #2d4a3c;
+      --gold: #c4a158;
+      --cream: #f5efe7;
+      --white: #ffffff;
+      --anthracite: #2c3e3f;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', serif;
+      background: linear-gradient(135deg, var(--cream) 0%, #ffffff 100%);
+      color: var(--anthracite);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 760px;
+      background: var(--white);
+      border: 1px solid rgba(196, 161, 88, 0.35);
+      border-radius: 28px;
+      box-shadow: 0 24px 70px rgba(45, 74, 60, 0.16);
+      overflow: hidden;
+    }
+
+    .header {
+      background: var(--olive);
+      color: var(--cream);
+      padding: 42px 34px;
+      text-align: center;
+      position: relative;
+    }
+
+    .header::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -18px;
+      transform: translateX(-50%);
+      width: 72px;
+      height: 36px;
+      background: var(--gold);
+      border-radius: 0 0 72px 72px;
+      opacity: 0.95;
+    }
+
+    .kicker {
+      margin: 0 0 12px;
+      font-size: 13px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(32px, 6vw, 56px);
+      line-height: 1;
+      font-weight: 500;
+    }
+
+    .content {
+      padding: 54px 34px 38px;
+      text-align: center;
+    }
+
+    .intro {
+      max-width: 560px;
+      margin: 0 auto 28px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      line-height: 1.65;
+    }
+
+    .highlight {
+      color: var(--olive);
+      font-weight: 700;
+    }
+
+    .cta {
+      display: inline-block;
+      margin: 10px auto 18px;
+      padding: 17px 30px;
+      background: var(--gold);
+      color: var(--olive);
+      text-decoration: none;
+      border-radius: 999px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 800;
+      font-size: 17px;
+      box-shadow: 0 14px 28px rgba(196, 161, 88, 0.34);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 34px rgba(196, 161, 88, 0.42);
+    }
+
+    .small {
+      max-width: 560px;
+      margin: 0 auto;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 1.55;
+      color: rgba(44, 62, 63, 0.78);
+    }
+
+    .footer {
+      border-top: 1px solid rgba(196, 161, 88, 0.25);
+      padding: 22px 34px 28px;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      color: rgba(44, 62, 63, 0.72);
+      background: rgba(245, 239, 231, 0.55);
+    }
+
+    .footer strong { color: var(--olive); }
+  </style>
+</head>
+<body>
+  <main class="card" aria-labelledby="titre-newsletter">
+    <section class="header">
+      <p class="kicker">Parfums d’Olive</p>
+      <h1 id="titre-newsletter">La newsletter</h1>
+    </section>
+
+    <section class="content">
+      <p class="intro">
+        Tu souhaites recevoir nos nouvelles, nos événements, nos moments partagés
+        et quelques inspirations autour de la cuisine méditerranéenne ?
+        <br />
+        Clique simplement ci-dessous pour confirmer ton accord.
+      </p>
+
+      <a class="cta" href="mailto:contact@parfumsdolive.com?subject=J%E2%80%99accepte%20de%20recevoir%20la%20newsletter%20Parfums%20d%E2%80%99Olive&body=Bonjour%20Parfums%20d%E2%80%99Olive%2C%0A%0AJ%E2%80%99accepte%20de%20recevoir%20votre%20newsletter.%0A%0AMerci.%0A">
+        J’accepte de recevoir la newsletter
+      </a>
+
+      <p class="small">
+        En cliquant, un email de confirmation s’ouvre. Une fois envoyé, il servira de preuve claire de ton accord.
+        Tu pourras te désinscrire à tout moment en nous écrivant.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <strong>Parfums d’Olive</strong><br />
+      Baie des Citrons · Nouméa<br />
+      contact@parfumsdolive.com
+    </footer>
+  </main>
+</body>
+</html>
