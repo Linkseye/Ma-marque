@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Confirmation newsletter · Parfums d’Olive</title>
+  <meta name="description" content="Confirmation d’inscription à la newsletter Parfums d’Olive." />
+  <style>
+    :root {
+      --olive: #2d4a3c;
+      --gold: #c4a158;
+      --cream: #f5efe7;
+      --white: #ffffff;
+      --anthracite: #2c3e3f;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: var(--cream);
+      color: var(--anthracite);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .box {
+      max-width: 680px;
+      width: 100%;
+      padding: 46px 34px;
+      background: var(--white);
+      border-radius: 28px;
+      border: 1px solid rgba(196, 161, 88, 0.35);
+      box-shadow: 0 24px 70px rgba(45, 74, 60, 0.16);
+      text-align: center;
+    }
+
+    .badge {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 24px;
+      border-radius: 50%;
+      background: var(--olive);
+      color: var(--gold);
+      display: grid;
+      place-items: center;
+      font-size: 34px;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      color: var(--olive);
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: clamp(30px, 5vw, 46px);
+      font-weight: 500;
+    }
+
+    p {
+      margin: 0 auto 18px;
+      max-width: 520px;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--olive);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <main class="box">
+    <div class="badge" aria-hidden="true">✓</div>
+    <h1>Merci, c’est confirmé</h1>
+    <p>
+      Ton accord pour recevoir la newsletter de Parfums d’Olive a bien été pris en compte.
+    </p>
+    <p>
+      À très bientôt pour les nouvelles, les événements et les inspirations gourmandes de la Baie des Citrons.
+    </p>
+    <p>
+      <a href="./index.html">Retour à la page newsletter</a>
+    </p>
+  </main>
+</body>
+</html>
